@@ -44,7 +44,7 @@ app.get('/abracadabra/usuarios', (req, res) => {
     res.send({users});
 })
 
-//Una vez verificada la coincidencia de usuario, deriva a la siguiente ruta estilo "loading":
+//Una vez verificada la coincidencia de usuario, deriva a la siguiente ruta con estilo "loading":
 app.get('/abracadabra/juego/:usuario', async (req, res) => {
     res.send(`
     <html>
